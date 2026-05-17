@@ -5,14 +5,10 @@
     <classes>
       <class name="com.bstack.tests.EcommerceTest">
         <methods>
-          <include name="TC_01_validateValidLogin"/>
           <include name="teardown"/>
-          <include name="TC_03_validateAddToCart"/>
           <include name="createTest"/>
-          <include name="TC_02_validateProductDisplay"/>
           <include name="setup"/>
-          <include name="TC_05_validateCheckout"/>
-          <include name="TC_04_validateCartSlider"/>
+          <include name="TC_06_validateRemoveCartItem"/>
         </methods>
       </class> <!-- com.bstack.tests.EcommerceTest -->
     </classes>

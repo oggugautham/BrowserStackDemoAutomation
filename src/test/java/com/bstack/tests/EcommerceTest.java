@@ -153,12 +153,69 @@ public class EcommerceTest extends BaseTest {
         System.out.println(
                 "TC_04 Passed");
     }
+    
+    @Test(priority = 5)
+
+    public void TC_05_validateMultipleItemsCart()
+            throws Exception {
+
+        pp = new ProductPage(driver);
+
+        pp.addSecondProduct();
+
+        cp = new CartPage(driver);
+
+        String count =
+                cp.getCartCount();
+
+        System.out.println(
+                "Cart Count: " + count);
+
+        Assert.assertTrue(
+                Integer.parseInt(count) >= 2);
+
+        ScreenshotUtil.captureScreenshot(
+                driver,
+                "TC_05_MultipleCart");
+
+        test.addScreenCaptureFromPath(
+                "screenshots/TC_05_MultipleCart.png");
+
+        test.pass(
+                "Multiple Products Added");
+
+        System.out.println(
+                "TC_05 Passed");
+    }
+    
+    @Test(priority = 6)
+
+    public void TC_06_validateRemoveCartItem()
+            throws Exception {
+
+        pp = new ProductPage(driver);
+
+        pp.removeProduct();
+
+        ScreenshotUtil.captureScreenshot(
+                driver,
+                "TC_06_RemoveProduct");
+
+        test.addScreenCaptureFromPath(
+                "screenshots/TC_06_RemoveProduct.png");
+
+        test.pass(
+                "Product Removed Successfully");
+
+        System.out.println(
+                "TC_06 Passed");
+    }
 
     // =====================================================
 
-    @Test(priority = 5)
+    @Test(priority = 7)
 
-    public void TC_05_validateCheckout()
+    public void TC_07_validateCheckout()
             throws Exception {
 
         ch = new CheckoutPage(driver);

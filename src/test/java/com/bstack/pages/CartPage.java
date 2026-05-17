@@ -40,4 +40,11 @@ public class CartPage {
                 driver,
                 cartQuantity).getText();
     }
+    
+    public String getCartCount() {
+
+        return WaitUtils.waitForElement(
+                driver,
+                cartQuantity).getText();
+    }
 }

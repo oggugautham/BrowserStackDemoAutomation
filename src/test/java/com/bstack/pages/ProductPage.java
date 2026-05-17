@@ -29,6 +29,15 @@ public class ProductPage {
 
     By cartSlider =
             By.className("float-cart");
+    
+    By secondAddToCartButton =
+            By.xpath(
+            "(//div[contains(text(),'Add to cart')])[2]");
+
+    By removeButton =
+            By.className(
+            "shelf-item__del");
+    
 
     public boolean isProductDisplayed() {
 
@@ -68,5 +77,27 @@ public class ProductPage {
         return WaitUtils.waitForElement(
                 driver,
                 cartSlider).isDisplayed();
+    }
+    
+    public void addSecondProduct() {
+
+        WaitUtils.waitForElement(
+                driver,
+                secondAddToCartButton)
+                .click();
+
+        System.out.println(
+                "Second Product Added");
+    }
+
+    public void removeProduct() {
+
+        WaitUtils.waitForElement(
+                driver,
+                removeButton)
+                .click();
+
+        System.out.println(
+                "Product Removed");
     }
 }

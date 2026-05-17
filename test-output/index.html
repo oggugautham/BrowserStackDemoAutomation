@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,7 +123,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BrowserStack_Suite" title="com.bstack.tests.EcommerceTest" class="method navigator-link" hash-for-method="TC_05_validateCheckout">TC_05_validateCheckout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BrowserStack_Suite" title="com.bstack.tests.EcommerceTest" class="method navigator-link" hash-for-method="TC_05_validateMultipleItemsCart">TC_05_validateMultipleItemsCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BrowserStack_Suite" title="com.bstack.tests.EcommerceTest" class="method navigator-link" hash-for-method="TC_06_validateRemoveCartItem">TC_06_validateRemoveCartItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BrowserStack_Suite" title="com.bstack.tests.EcommerceTest" class="method navigator-link" hash-for-method="TC_07_validateCheckout">TC_07_validateCheckout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BrowserStack_Suite -->
@@ -174,9 +184,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_05_validateCheckout">
-                  </a> <!-- TC_05_validateCheckout -->
-                  <span class="method-name">TC_05_validateCheckout</span>
+                  <a name="TC_05_validateMultipleItemsCart">
+                  </a> <!-- TC_05_validateMultipleItemsCart -->
+                  <span class="method-name">TC_05_validateMultipleItemsCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_06_validateRemoveCartItem">
+                  </a> <!-- TC_06_validateRemoveCartItem -->
+                  <span class="method-name">TC_06_validateRemoveCartItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_07_validateCheckout">
+                  </a> <!-- TC_07_validateCheckout -->
+                  <span class="method-name">TC_07_validateCheckout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,32 +257,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_01_validateValidLogin')
 data.setCell(0, 2, 'com.bstack.tests.EcommerceTest')
-data.setCell(0, 3, 7666);
+data.setCell(0, 3, 13574);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_05_validateCheckout')
+data.setCell(1, 1, 'TC_07_validateCheckout')
 data.setCell(1, 2, 'com.bstack.tests.EcommerceTest')
-data.setCell(1, 3, 920);
+data.setCell(1, 3, 922);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC_03_validateAddToCart')
 data.setCell(2, 2, 'com.bstack.tests.EcommerceTest')
-data.setCell(2, 3, 763);
+data.setCell(2, 3, 778);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TC_02_validateProductDisplay')
 data.setCell(3, 2, 'com.bstack.tests.EcommerceTest')
 data.setCell(3, 3, 543);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_04_validateCartSlider')
+data.setCell(4, 1, 'TC_05_validateMultipleItemsCart')
 data.setCell(4, 2, 'com.bstack.tests.EcommerceTest')
-data.setCell(4, 3, 211);
+data.setCell(4, 3, 225);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_06_validateRemoveCartItem')
+data.setCell(5, 2, 'com.bstack.tests.EcommerceTest')
+data.setCell(5, 3, 225);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_04_validateCartSlider')
+data.setCell(6, 2, 'com.bstack.tests.EcommerceTest')
+data.setCell(6, 3, 197);
 window.suiteTableData['BrowserStack_Suite']= { tableData: data, tableDiv: 'times-div-BrowserStack_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-BrowserStack_Suite">
               </div> <!-- times-div-BrowserStack_Suite -->
             </div> <!-- times-div -->
@@ -291,47 +323,63 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void com.bstack.tests.EcommerceTest.TC_01_validateValidLogin() throws java.lang.Exception)</span>
-                <span class="method-start">2511 ms</span>
+                <span class="method-start">3102 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_01_validateValidLogin</span>
-                <span class="method-start">2514 ms</span>
+                <span class="method-start">3104 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void com.bstack.tests.EcommerceTest.TC_02_validateProductDisplay() throws java.lang.Exception)</span>
-                <span class="method-start">10183 ms</span>
+                <span class="method-start">16681 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_02_validateProductDisplay</span>
-                <span class="method-start">10183 ms</span>
+                <span class="method-start">16682 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void com.bstack.tests.EcommerceTest.TC_03_validateAddToCart() throws java.lang.Exception)</span>
-                <span class="method-start">10728 ms</span>
+                <span class="method-start">17226 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_03_validateAddToCart</span>
-                <span class="method-start">10728 ms</span>
+                <span class="method-start">17227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_04_validateCartSlider</span>
+                <span class="method-start">18006 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void com.bstack.tests.EcommerceTest.TC_04_validateCartSlider() throws java.lang.Exception)</span>
-                <span class="method-start">11492 ms</span>
+                <span class="method-start">18006 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC_04_validateCartSlider</span>
-                <span class="method-start">11492 ms</span>
+                <span class="method-name">TC_05_validateMultipleItemsCart</span>
+                <span class="method-start">18204 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">createTest(public void com.bstack.tests.EcommerceTest.TC_05_validateCheckout() throws java.lang.Exception)</span>
-                <span class="method-start">11704 ms</span>
+                <span class="method-name">createTest(public void com.bstack.tests.EcommerceTest.TC_05_validateMultipleItemsCart() throws java.lang.Except...)</span>
+                <span class="method-start">18204 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createTest(public void com.bstack.tests.EcommerceTest.TC_06_validateRemoveCartItem() throws java.lang.Exception)</span>
+                <span class="method-start">18430 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC_05_validateCheckout</span>
-                <span class="method-start">11704 ms</span>
+                <span class="method-name">TC_06_validateRemoveCartItem</span>
+                <span class="method-start">18431 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createTest(public void com.bstack.tests.EcommerceTest.TC_07_validateCheckout() throws java.lang.Exception)</span>
+                <span class="method-start">18658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_07_validateCheckout</span>
+                <span class="method-start">18658 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">12625 ms</span>
+                <span class="method-start">19581 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
